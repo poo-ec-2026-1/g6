@@ -1,4 +1,5 @@
 // ===== CONCEITO DE POO: HERANÇA =====
+// Clase Ônibus Convencional
 public class OnibusConvencional extends Veiculo {
 
     public OnibusConvencional(String placa) {
