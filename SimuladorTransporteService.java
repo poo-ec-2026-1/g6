@@ -1,0 +1,90 @@
+import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * ====================================================================
+ * GUIA DE ACESSIBILIDADE - CÓDIGOS DOS PONTOS DE GOIÂNIA
+ * ====================================================================
+ * Código [ 101 ] -> Terminal Praça da Bíblia
+ * Código [ 102 ] -> Estação Praça Cívica
+ * Código [ 103 ] -> Terminal Praça A
+ * Código [ 104 ] -> Terminal DERGO
+ * Código [ 105 ] -> Terminal Itatiaia (Ponto final perto do Campus UFG)
+ * ====================================================================
+ */
+public class SimuladorTransporteService implements ServicoTransporte {
+
+    private List<Linha> linhasDeGoiania = new ArrayList<>();
+
+    public SimuladorTransporteService() {
+        
+        // Cadastro dos pontos de Goiânia
+        Ponto biblia = new Ponto("101", "Terminal Praça da Bíblia");
+        Ponto civica = new Ponto("102", "Estação Praça Cívica"); 
+        Ponto pracaA = new Ponto("103", "Terminal Praça A");
+        Ponto dergo  = new Ponto("104", "Terminal DERGO");
+        Ponto itatiaia = new Ponto("105", "Terminal Itatiaia");
+
+        // --- LINHA 001 (EIXO ANHANGUERA) ---
+        Linha eixo = new Linha("001", "Eixo Anhanguera", "Terminal Padre Pelágio", new OnibusEixo("EIXO-01"));
+        eixo.adicionarParada(biblia, 0);       
+        eixo.adicionarParada(civica, 8);  
+        eixo.adicionarParada(pracaA, 15);     
+        eixo.adicionarParada(dergo, 22);      
+        linhasDeGoiania.add(eixo);
+
+        // --- LINHA 020 (CONVENCIONAL) ---
+        Linha linha020 = new Linha("020", "T. Garavelo / T. Bíblia", "Terminal Praça da Bíblia", new OnibusConvencional("CONV-20"));
+        linha020.adicionarParada(biblia, 0);            
+        linha020.adicionarParada(civica, 11);       
+        linhasDeGoiania.add(linha020);
+
+        // --- LINHA 105 (CAMPUS VIA PRAÇA A) ---
+        Linha linha105 = new Linha("105", "T. Praça A / Campus UFG", "Campus Samambaia", new OnibusConvencional("UFG-105"));
+        linha105.adicionarParada(pracaA, 0); 
+        linha105.adicionarParada(itatiaia, 25); 
+        linhasDeGoiania.add(linha105);
+
+        // --- LINHA 263 (CAMPUS VIA BÍBLIA) ---
+        Linha linha263 = new Linha("263", "T. Bíblia / Campus UFG", "Campus Samambaia", new OnibusConvencional("UFG-263"));
+        linha263.adicionarParada(biblia, 0); 
+        linha263.adicionarParada(itatiaia, 30); 
+        linhasDeGoiania.add(linha263);
+    }
+
+    // ===== AQUI ESTAVA O ERRO! AGORA CORRIGIDO E IGUAL À INTERFACE =====
+    @Override
+    public List<Previsao> consultarPrevisoesDoPonto(String codigoDoPonto) {
+        List<Previsao> resultados = new ArrayList<>();
+        LocalTime agora = LocalTime.now();
+
+        for (Linha linha : linhasDeGoiania) {
+            int tempoAteOPonto = linha.obterTempoAteOPonto(codigoDoPonto);
+            
+            if (tempoAteOPonto != -1) { 
+                int minutoUltimaPartida = (agora.getMinute() / 10) * 10;
+                LocalTime partidaOnibus = LocalTime.of(agora.getHour(), minutoUltimaPartida);
+                LocalTime passagemNoPonto = partidaOnibus.plusMinutes(tempoAteOPonto);
+
+                if (passagemNoPonto.isBefore(agora)) {
+                    passagemNoPonto = passagemNoPonto.plusMinutes(10);
+                }
+
+                long minutosFaltando = ChronoUnit.MINUTES.between(agora, passagemNoPonto);
+
+                resultados.add(new Previsao(
+                    linha.getNumero() + " - " + mergeNome(linha.getNome()),
+                    linha.getDestino(), 
+                    (int) minutosFaltando
+                ));
+            }
+        }
+        return resultados;
+    }
+
+    private String mergeNome(String nome) {
+        return nome;
+    }
+}
