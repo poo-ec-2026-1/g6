@@ -1,5 +1,5 @@
 import java.util.List;
-
+// Classe Serviço Transporte
 // ===== CONCEITO DE POO: INTERFACE (CONTRATO) =====
 public interface ServicoTransporte {
     // Nome bem claro e idêntico para todo o sistema
