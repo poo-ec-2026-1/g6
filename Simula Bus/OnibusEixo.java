@@ -1,5 +1,5 @@
 // ===== CONCEITO DE POO: HERANÇA =====
-// OnibusEixo herda tudo o que o Veiculo tem usando a palavra 'extends'
+// Classe Ônibus Eixo herda tudo o que o Veiculo tem usando a palavra 'extends'
 public class OnibusEixo extends Veiculo {
 
     public OnibusEixo(String placa) {
