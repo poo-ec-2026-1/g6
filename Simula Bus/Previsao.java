@@ -1,3 +1,4 @@
+// Classe Previsão
 // Esta classe serve apenas para estruturar o que vai aparecer na tela do app.
 public class Previsao {
     private String linha;                
