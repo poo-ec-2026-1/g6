@@ -1,4 +1,5 @@
 // ===== CONCEITO DE POO: CLASSE ABSTRATA =====
+// Classe Veículo
 // É um molde geral. Não podemos criar um "Veiculo" genérico na rua, 
 // ele precisa ser ou um Eixo ou um Convencional.
 public abstract class Veiculo {
