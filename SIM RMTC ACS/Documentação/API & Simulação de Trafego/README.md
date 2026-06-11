@@ -1,1 +1,1 @@
-### Parte do projeto designada ao membro Anderson Valerio Dos Santos (202503213), seu trabalho e tratar da construção e simulação de uma API virtual e da simulação do trafego e deslocamento de ônibus.
+### Parte do projeto designada ao membro Anderson Valerio Dos Santos (202503213), seu trabalho é tratar da construção e simulação de uma API virtual e da simulação do trafego e deslocamento de ônibus.
