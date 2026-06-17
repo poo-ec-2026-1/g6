@@ -12,5 +12,5 @@ A classe ControleTela.java é responsável pelo controle das interações entre 
 
 A classe TelaPrograma.java carrega o arquivo fxml e monta a janela do programa.
 
-O arquivo fxml
+O arquivo fxml descreve como é o layout do programa.
 ## 4. Interações internas do programa
