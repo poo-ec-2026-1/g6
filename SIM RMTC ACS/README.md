@@ -68,6 +68,14 @@ Classe abstrata base para os ônibus. Define identificador, tipo, cálculo de tr
 
 Classe de teste sem JavaFX. Serve para validar a APIVirtual diretamente pelo terminal.
 
+### AppAcessivel
+
+Classe de interface do sistema usando JavaFX com um sistema de listagem simplorio através do uso das demais classes.
+
+### AppCRUD
+
+Classe de interface do sistema usando JavaFX que simula o ciclo de controle completo dos dados (Criar, Ler, Atualizar e Deletar - CRUD).
+
 ## Fluxo de uso/interação da tela pelo usuário
 
 1. O usuário inicia na pesquisa de ponto e linha.
