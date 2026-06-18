@@ -180,7 +180,6 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - Implementação da lógica de simulação;
 - Cálculo de distância e tempo das rotas;
 - Organização dos setores da cidade;
-- Implementação das matrizes de interligação entre setores;
 - Simulação de tráfego e deslocamento.
 
 #### Classes Relacionadas
