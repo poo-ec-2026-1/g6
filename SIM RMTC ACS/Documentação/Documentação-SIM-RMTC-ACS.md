@@ -115,11 +115,11 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - ControleTela
 - Todas as classes durante a etapa de testes
 
-#### Prazo
+#### Espectativas de entrega
 
-- 05/06 a 17/06: Estruturação da documentação;
-- 18/06 a 24/06: Testes e validações;
-- 25/06 a 26/06: Consolidação do relatório final.
+- Estruturação da documentação;
+- Testes e validações;
+- Consolidação do relatório final.
 
 ---
 
@@ -139,11 +139,11 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - TelaPrograma
 - ControleTela
 
-#### Prazo
+#### Espectativas de entrega
 
-- 05/06 a 18/06: Desenvolvimento visual;
-- 19/06 a 23/06: Ajustes de usabilidade;
-- 24/06 a 26/06: Refinamentos finais.
+- Desenvolvimento visual;
+- Ajustes de usabilidade;
+- Refinamentos finais.
 
 ---
 
@@ -164,11 +164,11 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - TelaPrograma
 - ExecutarTerminal
 
-#### Prazo
+#### Espectativas de entrega
 
-- 05/06 a 19/06: Implementação inicial;
-- 20/06 a 24/06: Validação de acessibilidade;
-- 25/06 a 26/06: Ajustes finais.
+- Implementação inicial;
+- Validação de acessibilidade;
+- Ajustes finais.
 
 ---
 
@@ -194,11 +194,11 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - OnibusComum
 - OnibusEixo
 
-#### Prazo
+#### Espectativas de entrega
 
-- 05/06 a 20/06: Implementação da lógica;
-- 21/06 a 24/06: Testes de integração;
-- 25/06 a 26/06: Correções.
+- Implementação da lógica;
+- Testes de integração;
+- Correções.
 
 ---
 
@@ -222,39 +222,41 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - PreferenciasUsuario
 - ArquivoDados
 
-#### Integração com
+#### Integrações
 
 - ControleTela
 - APIVirtual
 
-#### Prazo
+#### Espectativas de entrega
 
-- 05/06 a 18/06: Estrutura da persistência;
-- 19/06 a 23/06: Implementação do login;
-- 24/06 a 26/06: Integração e testes.
+- Estrutura da persistência;
+- Implementação do login;
+- Implementação das Preferências de usuário;
+- Implementação do Banco de Dados;
+- Integração e testes.
 
 ---
 
-## 5. Entregáveis
+## 5. Caminho de Implementações
 
-### Até 17/06
+### Estrutura inicial
 
 - Estrutura documental inicial;
 - Interface visual preliminar;
 - Estrutura inicial da persistência local.
 
-### Até 20/06
+### Simulações
 
 - Simulação das rotas concluída;
 - Recursos de acessibilidade implementados;
 - Sistema de login em desenvolvimento.
 
-### Até 24/06
+### Testes e integrações gerais
 
 - Integração completa dos módulos;
 - Testes funcionais realizados.
 
-### Até 26/06
+### Finalização do projeto
 
 - Sistema finalizado;
 - Relatório final concluído;
