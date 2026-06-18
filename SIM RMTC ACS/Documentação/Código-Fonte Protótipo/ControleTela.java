@@ -35,9 +35,6 @@ public class ControleTela {
         configurarListaLinhas(listaLinhas);
         configurarListaLinhas(listaLinhasRota);
         mostrarTelaPontoLinha();
-
-        campoPesquisaPontoLinha.setText("Setor Sul");
-        pesquisarPontoOuSetor();
     }
     /**
      * Mostra a área de pesquisa de ponto e linha, escondendo a pesquisa de rota.
@@ -75,7 +72,7 @@ public class ControleTela {
         listaPontos.getItems().clear();
         listaLinhas.getItems().clear();
         if (termo == null || termo.trim().isEmpty()) {
-            textoResultadoPontoLinha.setText("Digite o codigo do ponto ou o setor - EX: SS01, 01, Setor Sul, setorsul ou SS.");
+            textoResultadoPontoLinha.setText("Digite o codigo do ponto ou o setor.");
             return;
         }
         PontoOnibus ponto = api.buscarPontoPorCodigo(termo);
@@ -163,7 +160,7 @@ public class ControleTela {
         List<LinhaOnibus> linhas = api.buscarLinhasPorPonto(ponto.getCodigo());
         listaLinhas.getItems().setAll(linhas);
         textoResultadoPontoLinha.setText("Ponto selecionado: " + ponto.getCodigo() + " - " + ponto.getNome()
-                + "\nLinhas encontradas: " + linhas.size() + ". Selecione uma linha para ver chegada e distancia.");
+                + "\nLinhas encontradas: " + linhas.size() + ". Selecione uma linha para ver chegada e distância.");
     }
     /**
      * Mostra tempo de chegada, distância do ônibus e rota simplificada da linha selecionada.
@@ -171,7 +168,7 @@ public class ControleTela {
     private void mostrarPrevisao(LinhaOnibus linha) {
         PrevisaoOnibus previsao = api.calcularPrevisao(pontoSelecionado.getCodigo(), linha.getNumero());
         if (previsao == null) {
-            textoResultadoPontoLinha.setText("Nao foi possivel calcular a previsao para essa linha.");
+            textoResultadoPontoLinha.setText("Não foi possivel calcular a previsão para essa linha.");
             return;
         }
 
@@ -179,7 +176,7 @@ public class ControleTela {
                 "Ponto: " + pontoSelecionado.getCodigo() + " - " + pontoSelecionado.getNome() + "\n" +
                 "Linha " + linha.getNumero() + " - " + linha.getNome() + "\n" +
                 "Chegada: " + previsao.getMinutosRestantes() + " minutos\n" +
-                "Distancia do onibus ate o ponto: " + previsao.getDistanciaMetros() + " metros\n" +
+                "Distância do ônibus até o ponto: " + previsao.getDistanciaMetros() + " metros\n" +
                 "Rota simplificada: " + linha.getRotaSimplificada()
         );
     }
