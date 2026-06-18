@@ -212,6 +212,7 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 #### Responsabilidades
 
 - Implementação do sistema de login;
+- Implementação da lógica CRUD do sistema;
 - Cadastro de usuário e senha;
 - Persistência local dos dados;
 - Armazenamento de preferências do usuário;
