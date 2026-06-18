@@ -138,6 +138,9 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - TelaPrograma.fxml
 - TelaPrograma
 - ControleTela
+- TrafegoTransporte
+- PrevisaoOnibus
+- TamanhoRota
 
 #### Espectativas de entrega
 
@@ -152,6 +155,7 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 #### Responsabilidades
 
 - Implementação dos recursos de acessibilidade;
+- Estrutura de simulação via coordenadas;
 - Revisão das mensagens exibidas ao usuário;
 - Garantia de clareza nas informações;
 - Melhoria da interação entre usuário e sistema;
@@ -167,6 +171,7 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 #### Espectativas de entrega
 
 - Implementação inicial;
+- Implementação da lógica de pesquisa via coordenadas do usuário;
 - Validação de acessibilidade;
 - Ajustes finais.
 
