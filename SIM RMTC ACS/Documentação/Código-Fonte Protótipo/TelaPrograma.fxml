@@ -25,18 +25,18 @@
            maxWidth="Infinity"
            style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #172033;" />
 
-    <Label text="Consulta de pontos, linhas e rotas"
+    <Label text="Consulta de pontos, linhas e rotas."
            wrapText="true"
            style="-fx-font-size: 13; -fx-text-fill: #4b5568;" />
 
     <HBox spacing="8">
         <Button fx:id="botaoTelaPontoLinha"
-                text="Ponto e linha"
+                text="Ponto e linha."
                 HBox.hgrow="ALWAYS"
                 maxWidth="Infinity"
                 onAction="#mostrarTelaPontoLinha" />
         <Button fx:id="botaoTelaRota"
-                text="Pesquisa de rota"
+                text="Pesquisa de rota."
                 HBox.hgrow="ALWAYS"
                 maxWidth="Infinity"
                 onAction="#mostrarTelaRota" />
@@ -44,31 +44,31 @@
 
     <StackPane VBox.vgrow="ALWAYS">
         <VBox fx:id="telaPontoLinha" spacing="10">
-            <Label text="Pesquisa de ponto e linha"
+            <Label text="Pesquisa de ponto e linha."
                    style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #172033;" />
 
-            <Label text="Digite o codigo do ponto ou a localidade atual - EX: SS01, 01, Setor Sul, setorsul ou SS."
+            <Label text="Digite o codigo do ponto ou a localidade atual."
                    wrapText="true"
                    style="-fx-font-size: 12; -fx-text-fill: #4b5568;" />
 
             <HBox spacing="8">
                 <TextField fx:id="campoPesquisaPontoLinha"
-                           promptText="Ponto ou setor"
+                           promptText="Ponto ou setor."
                            HBox.hgrow="ALWAYS"
                            style="-fx-background-radius: 14; -fx-border-radius: 14; -fx-border-color: #d5dbea; -fx-padding: 11; -fx-background-color: white;" />
-                <Button text="Buscar"
+                <Button text="Buscar!"
                         onAction="#pesquisarPontoOuSetor"
                         style="-fx-background-color: #172033; -fx-text-fill: white; -fx-background-radius: 14; -fx-font-weight: bold; -fx-padding: 11;" />
             </HBox>
 
-            <Label text="Pontos encontrados"
+            <Label text="Pontos encontrados:"
                    style="-fx-font-size: 13; -fx-font-weight: bold; -fx-text-fill: #283044;" />
 
             <ListView fx:id="listaPontos"
                       prefHeight="170"
                       style="-fx-background-radius: 16; -fx-border-radius: 16; -fx-border-color: #d5dbea; -fx-background-color: white;" />
 
-            <Label text="Linhas que passam pelo ponto"
+            <Label text="Linhas que passam pelo ponto:"
                    style="-fx-font-size: 13; -fx-font-weight: bold; -fx-text-fill: #283044;" />
 
             <ListView fx:id="listaLinhas"
@@ -87,19 +87,19 @@
             <Label text="Pesquisa de rota"
                    style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #172033;" />
 
-            <Label text="Informe de onde voce esta saindo e para onde deseja ir. Aceita nome do setor junto, separado, maiusculo, minusculo ou sigla."
+            <Label text="Informe de onde voce está saindo e para onde deseja ir."
                    wrapText="true"
                    style="-fx-font-size: 12; -fx-text-fill: #4b5568;" />
 
             <TextField fx:id="campoOrigem"
-                       promptText="Localidade de origem. Ex: Setor Norte ou SN"
+                       promptText="Localidade de origem."
                        style="-fx-background-radius: 14; -fx-border-radius: 14; -fx-border-color: #d5dbea; -fx-padding: 12; -fx-background-color: white;" />
 
             <TextField fx:id="campoDestino"
-                       promptText="Localidade de destino. Ex: Aeroporto ou AE"
+                       promptText="Localidade de destino."
                        style="-fx-background-radius: 14; -fx-border-radius: 14; -fx-border-color: #d5dbea; -fx-padding: 12; -fx-background-color: white;" />
 
-            <Button text="Calcular rota"
+            <Button text="Calcular rota!"
                     maxWidth="Infinity"
                     onAction="#calcularRota"
                     style="-fx-background-color: #172033; -fx-text-fill: white; -fx-background-radius: 16; -fx-font-weight: bold; -fx-padding: 12;" />
@@ -111,7 +111,7 @@
                    wrapText="true"
                    style="-fx-background-color: white; -fx-text-fill: #172033; -fx-background-radius: 18; -fx-border-color: #d5dbea; -fx-border-radius: 18; -fx-padding: 14; -fx-font-size: 14; -fx-font-weight: bold;" />
 
-            <Label text="Linhas sugeridas para a rota"
+            <Label text="Linhas sugeridas para a rota:"
                    style="-fx-font-size: 13; -fx-font-weight: bold; -fx-text-fill: #283044;" />
 
             <ListView fx:id="listaLinhasRota"
