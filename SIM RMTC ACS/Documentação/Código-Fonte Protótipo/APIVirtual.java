@@ -233,7 +233,7 @@ public class APIVirtual implements TrafegoTransporte {
         String destinoCanonico = resolverSetor(setorDestino);
         if (origemCanonica == null || destinoCanonico == null) {
             return new TamanhoRota(setorOrigem, setorDestino, 0, 0,
-                    "Nao foi possivel reconhecer um dos setores informados.", new ArrayList<>());
+                    "Não foi possivel reconhecer um dos setores informados.", new ArrayList<>());
         }
         String origem = normalizarTexto(origemCanonica);
         String destino = normalizarTexto(destinoCanonico);
@@ -256,7 +256,7 @@ public class APIVirtual implements TrafegoTransporte {
                     int tempo = 34 + primeira.getOnibus().aplicarTransito(4) + segunda.getOnibus().aplicarTransito(4);
                     int distancia = tempo * 470;
                     return new TamanhoRota(origemCanonica, destinoCanonico, tempo, distancia,
-                            "Rota com conexao em " + conexao + ": linha " + primeira.getNumero() +
+                            "Rota com conexão em " + conexao + ": linha " + primeira.getNumero() +
                             " e depois linha " + segunda.getNumero() + ".", Arrays.asList(primeira, segunda));
                 }
             }
