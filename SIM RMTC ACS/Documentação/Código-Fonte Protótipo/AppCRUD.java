@@ -26,7 +26,7 @@ public class AppCRUD extends Application {
 
     @Override
     public void start(Stage stage) {
-        stage.setTitle("SIM RMTC - Painel Administrativo CRUD");
+        stage.setTitle("AppBus Acessível- Painel Administrativo");
 
         // Alimentação inicial com base na estrutura simulada do programa
         dadosPontos.addAll(api.buscarPontosPorTexto(""));
