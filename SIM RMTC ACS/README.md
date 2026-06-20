@@ -1,4 +1,4 @@
-# AppBus - ACESSIVEL
+# AppBus Acessível
 
 ## Perspectiva
 
