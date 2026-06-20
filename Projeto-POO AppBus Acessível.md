@@ -1,4 +1,4 @@
-# Projeto-POO: SIMRmtc Acessível
+# Projeto-POO: AppBus Acessível
 
 ## Equipe do projeto:
 ● Anderson Valério dos Santos  
@@ -6,6 +6,8 @@
 ● Ítalo Reis Medina  
 ● Juan Victor Bastos Oliveira  
 ● Miguel Camargo de Andrade - Líder da equipe  
+
+### Este documento se refere às ideias e perspectivas iniciais de desenvolvimento do projeto
 
 ## Tema e Escopo do projeto:
 
