@@ -8,7 +8,7 @@ O transporte público é um dos principais meios de deslocamento da população 
 
 Pensando nesse cenário, foi desenvolvido o **AppBus Acessível**, um sistema de simulação de transporte coletivo construído em Java com interface JavaFX. O projeto busca representar, de forma simplificada, o funcionamento de uma rede de transporte urbano, permitindo consultas de pontos, linhas e rotas entre setores da cidade com uma interface simplificada para facilitação de implementação de acessibilidade geral.
 
-As principais refer~encias usadas para criação e modelagem do projeto foram os aplicativos e servidos providos pelo: SIMRmtc e Google Maps (Nagevação via transporte público)
+As principais referências usadas para criação e modelagem do projeto foram os aplicativos e serviços providos pelo: SIMRmtc e Google Maps (Nagevação via transporte público)
 
 ### 1.2 Problema
 
