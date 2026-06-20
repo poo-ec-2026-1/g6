@@ -1,4 +1,4 @@
-# UML e Evidências/Testes de Execução - SIM RMTC Acessível
+# UML e Evidências/Testes de Execução - AppBus Acessível
 
 ## Diagrama de Classes (PlantUML)
 
