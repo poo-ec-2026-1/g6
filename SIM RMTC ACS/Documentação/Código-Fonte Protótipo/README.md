@@ -1,4 +1,4 @@
-# Código fonte do programa SIMRMTC ACESSIVEL
+# Código fonte do programa AppBus Acessível
 
 ## Arquivo visual do programa
 
