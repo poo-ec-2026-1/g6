@@ -1,1 +1,1 @@
-## Imagens de execuções e testes do programa SIM RMTC Acessível
+## Imagens de execuções e testes do programa AppBus Acessível
