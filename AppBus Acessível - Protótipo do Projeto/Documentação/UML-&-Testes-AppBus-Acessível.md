@@ -325,59 +325,59 @@ ExecutarPrograma --> [TelaPrograma.fxml]
 
 ### Figura 1
 
-![Captura de tela 2026-06-10 183257.png](Imagens/Captura%20de%20tela%202026-06-10%20183257.png)
+![image1.png](Imagens/image1.png)
 
 ### Figura 2
 
-![Captura de tela 2026-06-10 184228.png](Imagens/Captura%20de%20tela%202026-06-10%20184228.png)
+![image2.png](Imagens/image2.png)
 
 ### Figura 3
 
-![Captura de tela 2026-06-10 184242.png](Imagens/Captura%20de%20tela%202026-06-10%20184242.png)
+![image3.png](Imagens/image3.png)
 
 ### Figura 4
 
-![Captura de tela 2026-06-10 184302.png](Imagens/Captura%20de%20tela%202026-06-10%20184302.png)
+![image4.png](Imagens/image4.png)
 
 ### Figura 5
 
-![Captura de tela 2026-06-10 184452.png](Imagens/Captura%20de%20tela%202026-06-10%20184452.png)
+![image5.png](Imagens/image5.png)
 
 ### Figura 6
 
-![Captura de tela 2026-06-10 184456.png](Imagens/Captura%20de%20tela%202026-06-10%20184456.png)
+![image6.png](Imagens/image6.png)
 
 ### Figura 7
 
-![Captura de tela 2026-06-10 184459.png](Imagens/Captura%20de%20tela%202026-06-10%20184459.png)
+![image7.png](Imagens/image7.png)
 
 ### Figura 8
 
-![Captura de tela 2026-06-10 184503.png](Imagens/Captura%20de%20tela%202026-06-10%20184503.png)
+![image8.png](Imagens/image8.png)
 
 ### Figura 9
 
-![Captura de tela 2026-06-10 184506.png](Imagens/Captura%20de%20tela%202026-06-10%20184506.png)
+![image9.png](Imagens/image9.png)
 
 ### Figura 10
 
-![Captura de tela 2026-06-10 184510.png](Imagens/Captura%20de%20tela%202026-06-10%20184510.png)
+![image10.png](Imagens/image10.png)
 
 ### Figura 11
 
-![Captura de tela 2026-06-10 184513.png](Imagens/Captura%20de%20tela%202026-06-10%20184513.png)
+![image11.png](Imagens/image11.png)
 
 ### Figura 12
 
-![Captura de tela 2026-06-10 184516.png](Imagens/Captura%20de%20tela%202026-06-10%20184516.png)
+![image12.png](Imagens/image12.png)
 
 ### Figura 13
 
-![Captura de tela 2026-06-10 184519.png](Imagens/Captura%20de%20tela%202026-06-10%20184519.png)
+![image13.png](Imagens/image13.png)
 
 ### Figura 14
 
-![Captura de tela 2026-06-10 184522.png](Imagens/Captura%20de%20tela%202026-06-10%20184522.png)
+![image14.png](Imagens/image14.png)
 
 ### Figura 15
 
