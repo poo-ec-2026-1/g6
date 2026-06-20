@@ -1,6 +1,6 @@
 # AppBus Acessível
 
-## Perspectiva
+## Perspectiva 
 
 Protótipo funcional de um projeto JavaFX construído para uma simulação de aplicativo móvel de transporte público com aspectos acessiveis por simplicidade.
 
