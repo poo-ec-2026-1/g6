@@ -1,10 +1,12 @@
-# SIM RMTC - ACESSIVEL
+# AppBus - ACESSIVEL
 
 ## Perspectiva
 
 Protótipo funcional de um projeto JavaFX construído para uma simulação de aplicativo móvel de transporte público com aspectos acessiveis por simplicidade.
 
 A interface é montada por FXML e o fluxo de interação fica separado na classe de controle e na classe de visão.
+
+As referências de criação do programa advem de aplivativos semelhantes como: SIMRmtc e Google Maps (Navegação via transporte público)
 
 ## Arquivo visual do programa
 
