@@ -78,6 +78,10 @@ Classe de interface do sistema usando JavaFX com um sistema de listagem simplori
 
 Classe de interface do sistema usando JavaFX que simula o ciclo de controle completo dos dados (Criar, Ler, Atualizar e Deletar - CRUD).
 
+### Launcher
+
+Classe de inicialização das interfaces de modo alternado
+
 ## Fluxo de uso/interação da tela pelo usuário
 
 1. O usuário inicia na pesquisa de ponto e linha.
@@ -88,3 +92,4 @@ Classe de interface do sistema usando JavaFX que simula o ciclo de controle comp
 6. Ao selecionar um ponto, aparecem as linhas que passam por ele.
 7. Ao selecionar uma linha, aparecem tempo de chegada, distância do ônibus e rota simplificada.
 8. Na pesquisa de rota, o usuário informa origem e destino para receber tempo aproximado, distância e linhas sugeridas.
+9. Nos aspectos que referência interações CRUD de administrador o mesmo pode criar, ler, atualizar e deletar dados referentes ao programa de forma simplificada. 
