@@ -1,4 +1,4 @@
-# Documentação do Projeto - SIM RMTC Acessível
+# Documentação do Projeto - AppBus Acessível
 
 ## 1. Introdução
 
@@ -6,7 +6,9 @@
 
 O transporte público é um dos principais meios de deslocamento da população urbana. Entretanto, muitos usuários enfrentam dificuldades para localizar pontos de ônibus, identificar linhas disponíveis e estimar o tempo necessário para realizar um trajeto.
 
-Pensando nesse cenário, foi desenvolvido o **SIM RMTC Acessível**, um sistema de simulação de transporte coletivo construído em Java com interface JavaFX. O projeto busca representar, de forma simplificada, o funcionamento de uma rede de transporte urbano, permitindo consultas de pontos, linhas e rotas entre setores da cidade com uma interface simplificada para facilitação de implementação de acessibilidade geral.
+Pensando nesse cenário, foi desenvolvido o **AppBus Acessível**, um sistema de simulação de transporte coletivo construído em Java com interface JavaFX. O projeto busca representar, de forma simplificada, o funcionamento de uma rede de transporte urbano, permitindo consultas de pontos, linhas e rotas entre setores da cidade com uma interface simplificada para facilitação de implementação de acessibilidade geral.
+
+As principais referências usadas para criação e modelagem do projeto foram os aplicativos e serviços providos pelo: SIMRmtc e Google Maps (Nagevação via transporte público)
 
 ### 1.2 Problema
 
@@ -115,11 +117,11 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - ControleTela
 - Todas as classes durante a etapa de testes
 
-#### Prazo
+#### Espectativas de entrega
 
-- 05/06 a 17/06: Estruturação da documentação;
-- 18/06 a 24/06: Testes e validações;
-- 25/06 a 26/06: Consolidação do relatório final.
+- Estruturação da documentação;
+- Testes e validações;
+- Consolidação do relatório final.
 
 ---
 
@@ -138,12 +140,15 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - TelaPrograma.fxml
 - TelaPrograma
 - ControleTela
+- TrafegoTransporte
+- PrevisaoOnibus
+- TamanhoRota
 
-#### Prazo
+#### Espectativas de entrega
 
-- 05/06 a 18/06: Desenvolvimento visual;
-- 19/06 a 23/06: Ajustes de usabilidade;
-- 24/06 a 26/06: Refinamentos finais.
+- Desenvolvimento visual;
+- Ajustes de usabilidade;
+- Refinamentos finais.
 
 ---
 
@@ -152,6 +157,7 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 #### Responsabilidades
 
 - Implementação dos recursos de acessibilidade;
+- Estrutura de simulação via coordenadas;
 - Revisão das mensagens exibidas ao usuário;
 - Garantia de clareza nas informações;
 - Melhoria da interação entre usuário e sistema;
@@ -164,11 +170,12 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - TelaPrograma
 - ExecutarTerminal
 
-#### Prazo
+#### Espectativas de entrega
 
-- 05/06 a 19/06: Implementação inicial;
-- 20/06 a 24/06: Validação de acessibilidade;
-- 25/06 a 26/06: Ajustes finais.
+- Implementação inicial;
+- Implementação da lógica de pesquisa via coordenadas do usuário;
+- Validação de acessibilidade;
+- Ajustes finais.
 
 ---
 
@@ -180,7 +187,6 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - Implementação da lógica de simulação;
 - Cálculo de distância e tempo das rotas;
 - Organização dos setores da cidade;
-- Implementação das matrizes de interligação entre setores;
 - Simulação de tráfego e deslocamento.
 
 #### Classes Relacionadas
@@ -195,11 +201,11 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - OnibusComum
 - OnibusEixo
 
-#### Prazo
+#### Espectativas de entrega
 
-- 05/06 a 20/06: Implementação da lógica;
-- 21/06 a 24/06: Testes de integração;
-- 25/06 a 26/06: Correções.
+- Implementação da lógica;
+- Testes de integração;
+- Correções.
 
 ---
 
@@ -208,6 +214,7 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 #### Responsabilidades
 
 - Implementação do sistema de login;
+- Implementação da lógica CRUD do sistema;
 - Cadastro de usuário e senha;
 - Persistência local dos dados;
 - Armazenamento de preferências do usuário;
@@ -223,39 +230,41 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 - PreferenciasUsuario
 - ArquivoDados
 
-#### Integração com
+#### Integrações
 
 - ControleTela
 - APIVirtual
 
-#### Prazo
+#### Espectativas de entrega
 
-- 05/06 a 18/06: Estrutura da persistência;
-- 19/06 a 23/06: Implementação do login;
-- 24/06 a 26/06: Integração e testes.
+- Estrutura da persistência;
+- Implementação do login;
+- Implementação das Preferências de usuário;
+- Implementação do Banco de Dados;
+- Integração e testes.
 
 ---
 
-## 5. Entregáveis
+## 5. Caminho de Implementações
 
-### Até 17/06
+### Estrutura inicial
 
 - Estrutura documental inicial;
 - Interface visual preliminar;
 - Estrutura inicial da persistência local.
 
-### Até 20/06
+### Simulações
 
 - Simulação das rotas concluída;
 - Recursos de acessibilidade implementados;
 - Sistema de login em desenvolvimento.
 
-### Até 24/06
+### Testes e integrações gerais
 
 - Integração completa dos módulos;
 - Testes funcionais realizados.
 
-### Até 26/06
+### Finalização do projeto
 
 - Sistema finalizado;
 - Relatório final concluído;
@@ -266,6 +275,6 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 
 ## 6. Considerações Finais
 
-O SIM RMTC Acessível busca fornecer uma simulação simplificada de um sistema de transporte coletivo, combinando conceitos de orientação a objetos, acessibilidade, interface gráfica e trabalho colaborativo.
+O AppBus Acessível busca fornecer uma simulação simplificada de um sistema de transporte coletivo, combinando conceitos de orientação a objetos, acessibilidade, interface gráfica e trabalho colaborativo.
 
 A divisão de tarefas foi organizada para distribuir as responsabilidades de maneira equilibrada entre os integrantes da equipe, permitindo que cada membro atue em uma área específica do projeto enquanto contribui para a construção de um sistema integrado e funcional.

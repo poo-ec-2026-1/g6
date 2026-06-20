@@ -1,6 +1,6 @@
 # RELATÓRIO DE DESENVOLVIMENTO: SIMULADOR DE API EM TEMPO REAL
 
-## 1. ESCOPO DO SUBSISTEMA DE SIMULAÇÃO
+## 1. ESCOPO DO SUBSISTEMA DE SIMULAÇÃO 
 
 Para resolver o desafio de mostrar os horários dos ônibus em tempo real sem ter acesso a um GPS real, foi desenvolvido um motor de simulação inteligente dentro da classe `APIVirtual`.
 

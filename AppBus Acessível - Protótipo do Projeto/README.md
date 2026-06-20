@@ -1,10 +1,12 @@
-# SIM RMTC - ACESSIVEL
+# AppBus Acessível
 
-## Perspectiva
+## Perspectiva 
 
 Protótipo funcional de um projeto JavaFX construído para uma simulação de aplicativo móvel de transporte público com aspectos acessiveis por simplicidade.
 
 A interface é montada por FXML e o fluxo de interação fica separado na classe de controle e na classe de visão.
+
+As referências de criação do programa advem de aplivativos semelhantes como: SIMRmtc e Google Maps (Navegação via transporte público)
 
 ## Arquivo visual do programa
 
@@ -68,6 +70,18 @@ Classe abstrata base para os ônibus. Define identificador, tipo, cálculo de tr
 
 Classe de teste sem JavaFX. Serve para validar a APIVirtual diretamente pelo terminal.
 
+### AppAcessivel
+
+Classe de interface do sistema usando JavaFX com um sistema de listagem simplorio através do uso das demais classes.
+
+### AppCRUD
+
+Classe de interface do sistema usando JavaFX que simula o ciclo de controle completo dos dados (Criar, Ler, Atualizar e Deletar - CRUD).
+
+### Launcher
+
+Classe de inicialização das interfaces de modo alternado
+
 ## Fluxo de uso/interação da tela pelo usuário
 
 1. O usuário inicia na pesquisa de ponto e linha.
@@ -78,3 +92,4 @@ Classe de teste sem JavaFX. Serve para validar a APIVirtual diretamente pelo ter
 6. Ao selecionar um ponto, aparecem as linhas que passam por ele.
 7. Ao selecionar uma linha, aparecem tempo de chegada, distância do ônibus e rota simplificada.
 8. Na pesquisa de rota, o usuário informa origem e destino para receber tempo aproximado, distância e linhas sugeridas.
+9. Nos aspectos que referência interações CRUD de administrador o mesmo pode criar, ler, atualizar e deletar dados referentes ao programa de forma simplificada. 
