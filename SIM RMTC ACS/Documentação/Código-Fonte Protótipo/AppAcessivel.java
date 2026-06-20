@@ -10,8 +10,8 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
- * Interface 1: SIMRMTC - ACESSIVEL
- * Programa básico isolado focado na listagem de registros em TableView
+ * Interface: AppBus Acessível - Listagem e Cadastro
+ * Programa focado na listagem de registros em TableView
  * e inserção de novos elementos via formulário.
  */
 public class AppAcessivel extends Application {
@@ -25,7 +25,7 @@ public class AppAcessivel extends Application {
 
     @Override
     public void start(Stage stage) {
-        stage.setTitle("SIM RMTC - ACESSÍVEL (Listagem e Cadastro)");
+        stage.setTitle("AppBus Acessível - Listagem e Cadastro");
 
         // Carrega os dados iniciais fornecidos pela API simulada
         listaPontos.addAll(api.buscarPontosPorTexto(""));
@@ -56,7 +56,7 @@ public class AppAcessivel extends Application {
         formulario.setPadding(new Insets(10, 0, 10, 0));
 
         TextField txtCodigo = new TextField(); 
-        txtCodigo.setPromptText("Ex: SN03");
+        txtCodigo.setPromptText("EX: SN03");
         TextField txtNome = new TextField(); 
         txtNome.setPromptText("Ex: Terminal Auxiliar");
         TextField txtSetor = new TextField(); 
@@ -68,7 +68,7 @@ public class AppAcessivel extends Application {
         formulario.addRow(1, new Label("Setor:"), txtSetor, new Label("Sigla:"), txtSigla);
 
         // Botão para criar e injetar o registro na TableView
-        Button btnCriar = new Button("Criar Novo Registro");
+        Button btnCriar = new Button("Criar Novo Registro!");
         btnCriar.setStyle("-fx-background-color: #172033; -fx-text-fill: white; -fx-font-weight: bold;");
         
         btnCriar.setOnAction(e -> {
@@ -93,7 +93,7 @@ public class AppAcessivel extends Application {
         layout.setPadding(new Insets(15));
         layout.setStyle("-fx-background-color: #f4f6fb;");
         
-        Label lbTitulo = new Label("SIMRMTC - Painel de Acessibilidade");
+        Label lbTitulo = new Label("AppBus Acessível - Painel de Inclusão");
         lbTitulo.setStyle("-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: #172033;");
 
         layout.getChildren().addAll(lbTitulo, tabela, formulario, btnCriar);
