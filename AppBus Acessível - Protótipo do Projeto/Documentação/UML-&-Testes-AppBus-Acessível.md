@@ -383,23 +383,23 @@ ExecutarPrograma --> [TelaPrograma.fxml]
 
 ### Diagrama - Classes do Programa
 
-![diagrama classes.png](Imagens/diagrama&classes.png)
+![classes.png](Imagens/classes.png)
 
 ### Diagrama - Pesquisa de Rota
 
-![pesquisa rota.png](Imagens/pesquisa&rota.png)
+![rota.png](Imagens/rota.png)
 
 ### Diagrama - Pesquisa de Ponto
 
-![pesquisa ponto.png](Imagens/pesquisa&ponto.png)
+![ponto.png](Imagens/ponto.png)
 
 ### Diagrama - Casos de Uso
 
-![diagrama uso.png](Imagens/diagrama&uso.png)
+![uso.png](Imagens/uso.png)
 
 ### Diagrama - Previsão de Chegada
 
-![previsão chegada.png](Imagens/previsão&chegada.png)
+![previsão.png](Imagens/previsão.png)
 
 ### Diagrama - Componentes do Programa
 
