@@ -1,11 +1,10 @@
 # Código fonte do programa AppBus Acessível
 
-## Arquivo visual do programa
+## Classes e arquivos principais do programa
 
-`TelaPrograma.fxml`
-
-## Classes principais do programa
-
+---
+### Aspecto Visual do Programa (Lógica & Implementação) - Miguel Camargo e Daniel Alberto
+---
 ### ExecutarPrograma.java
 
 Classe principal do JavaFX. Contém o método start, o método executarPrograma e o main.
@@ -22,6 +21,9 @@ Arquivo visual do programa. Pode ser aberto no SceneBuilder para alterar campos,
 
 Classe de controle. Lida com cliques, pesquisas, seleção de pontos, seleção de linhas e cálculo de rotas.
 
+---
+### Aspecto de Simulação do Programa (Lógica & Implementação) - Anderson Valerio
+---
 ### TrafegoTransporte.java
 
 Interface que define o contrato da API de transporte: buscar pontos, linhas, rotas e previsões.
@@ -62,6 +64,9 @@ Classe abstrata base para os ônibus. Define identificador, tipo, cálculo de tr
 
 Classe de teste sem JavaFX. Serve para validar a APIVirtual diretamente pelo terminal.
 
+---
+### Aspecto de Perseverança de Dados (Lógica) - Juan Victor
+---
 ### AppAcessivel
 
 Classe de interface do sistema usando JavaFX com um sistema de listagem simplorio através do uso das demais classes.
@@ -69,3 +74,7 @@ Classe de interface do sistema usando JavaFX com um sistema de listagem simplori
 ### AppCRUD
 
 Classe de interface do sistema usando JavaFX que simula o ciclo de controle completo dos dados (Criar, Ler, Atualizar e Deletar - CRUD).
+
+### Launcher
+
+Classe de inicialização das interfaces de modo alternado
