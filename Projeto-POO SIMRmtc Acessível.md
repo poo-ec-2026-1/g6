@@ -9,7 +9,7 @@
 
 ## Tema e Escopo do projeto:
 
-**Tema:** Desenvolver um aplicativo disponível em plataformas móveis para a navegação através do transporte público que possua recursos de acessibilidade mais táteis ao usuário(semelhante ao aplicativo SIMRmtc).
+**Tema:** Desenvolver um programa que simule um aplicativo disponível em plataformas móveis para a navegação através do transporte público que possua recursos de acessibilidade mais táteis ao usuário (Semelhante ao aplicativo SIMRmtc).
 
 **Escopo:** Dar suporte a usuários de transporte público com ou sem alguma deficiência visual, não abrangendo apenas aspectos que facilitariam o uso da ferramenta para esses grupos de usuários mas também facilitando o uso do aplicativo para os demais indivíduos que tem como o transporte público seu principal meio de transporte.
 
