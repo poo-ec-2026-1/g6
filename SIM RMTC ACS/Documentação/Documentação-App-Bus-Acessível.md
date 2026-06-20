@@ -1,4 +1,4 @@
-# Documentação do Projeto - SIM RMTC Acessível
+# Documentação do Projeto - AppBus Acessível
 
 ## 1. Introdução
 
@@ -6,7 +6,9 @@
 
 O transporte público é um dos principais meios de deslocamento da população urbana. Entretanto, muitos usuários enfrentam dificuldades para localizar pontos de ônibus, identificar linhas disponíveis e estimar o tempo necessário para realizar um trajeto.
 
-Pensando nesse cenário, foi desenvolvido o **SIM RMTC Acessível**, um sistema de simulação de transporte coletivo construído em Java com interface JavaFX. O projeto busca representar, de forma simplificada, o funcionamento de uma rede de transporte urbano, permitindo consultas de pontos, linhas e rotas entre setores da cidade com uma interface simplificada para facilitação de implementação de acessibilidade geral.
+Pensando nesse cenário, foi desenvolvido o **AppBus Acessível**, um sistema de simulação de transporte coletivo construído em Java com interface JavaFX. O projeto busca representar, de forma simplificada, o funcionamento de uma rede de transporte urbano, permitindo consultas de pontos, linhas e rotas entre setores da cidade com uma interface simplificada para facilitação de implementação de acessibilidade geral.
+
+As principais refer~encias usadas para criação e modelagem do projeto foram os aplicativos e servidos providos pelo: SIMRmtc e Google Maps (Nagevação via transporte público)
 
 ### 1.2 Problema
 
@@ -273,6 +275,6 @@ Desenvolver um sistema acessível de simulação da rede de transporte coletivo 
 
 ## 6. Considerações Finais
 
-O SIM RMTC Acessível busca fornecer uma simulação simplificada de um sistema de transporte coletivo, combinando conceitos de orientação a objetos, acessibilidade, interface gráfica e trabalho colaborativo.
+O AppBus Acessível busca fornecer uma simulação simplificada de um sistema de transporte coletivo, combinando conceitos de orientação a objetos, acessibilidade, interface gráfica e trabalho colaborativo.
 
 A divisão de tarefas foi organizada para distribuir as responsabilidades de maneira equilibrada entre os integrantes da equipe, permitindo que cada membro atue em uma área específica do projeto enquanto contribui para a construção de um sistema integrado e funcional.
