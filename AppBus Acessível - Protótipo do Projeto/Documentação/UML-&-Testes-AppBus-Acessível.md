@@ -1,64 +1,140 @@
 # UML e Evidências/Testes de Execução - AppBus Acessível
 
-## Diagrama de Classes (PlantUML)
+## Diagrama de Classes
 
 ```plantuml
 @startuml
 
-interface TrafegoTransporte
+skinparam classAttributeIconSize 0
 
-class APIVirtual
-class ControleTela
-class TelaPrograma
-class ExecutarPrograma
-class ExecutarTerminal
+interface TrafegoTransporte {
+    +buscarPontos(String)
+    +buscarLinhas(PontoOnibus)
+    +calcularRota(String,String)
+    +calcularPrevisao(LinhaOnibus,PontoOnibus)
+}
 
-abstract class OnibusModelo
+class ExecutarPrograma {
+    +main(String[])
+    +start(Stage)
+}
+
+class TelaPrograma {
+    +abrirTela()
+}
+
+class ControleTela {
+    -api : APIVirtual
+    -pontoSelecionado : PontoOnibus
+
+    +initialize()
+    +pesquisarPonto()
+    +pesquisarSetor()
+    +selecionarPonto()
+    +selecionarLinha()
+    +calcularRota()
+}
+
+class APIVirtual {
+    -pontos : List<PontoOnibus>
+    -linhas : List<LinhaOnibus>
+
+    +buscarPontos(String)
+    +buscarLinhas(PontoOnibus)
+    +calcularRota(String,String)
+    +calcularPrevisao(LinhaOnibus,PontoOnibus)
+}
+
+class PontoOnibus {
+    -codigo : String
+    -nome : String
+    -setor : String
+    -sigla : String
+}
+
+class LinhaOnibus {
+    -numero : String
+    -nome : String
+    -rota : String
+}
+
+class PrevisaoOnibus {
+    -tempoMinutos : int
+    -distanciaMetros : double
+}
+
+class TamanhoRota {
+    -distanciaKm : double
+    -tempoMinutos : int
+    -descricao : String
+}
+
+class OnibusModelo {
+    -numero : String
+    -velocidade : double
+}
+
 class OnibusComum
+
 class OnibusEixo
 
-class LinhaOnibus
-class PontoOnibus
-class PrevisaoOnibus
-class TamanhoRota
-
-APIVirtual ..|> TrafegoTransporte
+ExecutarPrograma --> TelaPrograma
+TelaPrograma --> ControleTela
 
 ControleTela --> TrafegoTransporte
-ControleTela --> PontoOnibus
+APIVirtual ..|> TrafegoTransporte
 
-APIVirtual --> LinhaOnibus
-APIVirtual --> PontoOnibus
+ControleTela --> APIVirtual
+
+APIVirtual "1" *-- "*" PontoOnibus
+APIVirtual "1" *-- "*" LinhaOnibus
+
 APIVirtual --> PrevisaoOnibus
 APIVirtual --> TamanhoRota
 
-LinhaOnibus --> PontoOnibus
-LinhaOnibus --> OnibusModelo
+OnibusModelo <|-- OnibusComum
+OnibusModelo <|-- OnibusEixo
 
-OnibusComum --|> OnibusModelo
-OnibusEixo --|> OnibusModelo
-
-ExecutarPrograma --> TelaPrograma
-ExecutarTerminal --> APIVirtual
-TelaPrograma --> ControleTela
+LinhaOnibus "*" -- "*" PontoOnibus
 
 @enduml
 ```
 
 ---
 
-## Diagrama de Sequência - Consulta de Rota
+## Diagrama de Sequência - Calculo de Rota
 
 ```plantuml
 @startuml
 
 actor Usuario
 
-Usuario -> ControleTela : Informa origem e destino
+participant TelaPrograma
+participant ControleTela
+participant APIVirtual
+participant TamanhoRota
+
+Usuario -> TelaPrograma : Informa origem e destino
+
+TelaPrograma -> ControleTela : calcularRota()
+
 ControleTela -> APIVirtual : calcularRota(origem,destino)
-APIVirtual -> APIVirtual : Processa matriz de setores
-APIVirtual --> ControleTela : TamanhoRota
-ControleTela --> Usuario : Exibe distância e tempo
+
+APIVirtual -> APIVirtual : normalizar setores
+
+APIVirtual -> APIVirtual : localizar rota
+
+APIVirtual -> APIVirtual : calcular distância
+
+APIVirtual -> APIVirtual : calcular tempo
+
+APIVirtual -> TamanhoRota : criar resultado
+
+TamanhoRota --> APIVirtual : resultado
+
+APIVirtual --> ControleTela : rota calculada
+
+ControleTela --> TelaPrograma : atualizar resultado
 
 @enduml
 ```
@@ -74,19 +150,169 @@ left to right direction
 
 actor Usuario
 
-rectangle "SIM RMTC Acessível" {
+rectangle "AppBus Acessível" {
+
     usecase "Pesquisar Ponto" as UC1
-    usecase "Visualizar Linhas" as UC2
-    usecase "Consultar Previsão" as UC3
-    usecase "Calcular Rota" as UC4
-    usecase "Listar Setores" as UC5
+    usecase "Pesquisar Setor" as UC2
+    usecase "Listar Pontos" as UC3
+    usecase "Listar Linhas" as UC4
+    usecase "Selecionar Linha" as UC5
+    usecase "Consultar Previsão" as UC6
+    usecase "Calcular Rota" as UC7
+    usecase "Visualizar Distância" as UC8
+    usecase "Visualizar Tempo Estimado" as UC9
+
 }
 
 Usuario --> UC1
 Usuario --> UC2
-Usuario --> UC3
-Usuario --> UC4
-Usuario --> UC5
+Usuario --> UC7
+
+UC1 --> UC4 : <<include>>
+UC2 --> UC3 : <<include>>
+
+UC3 --> UC4 : <<extend>>
+
+UC4 --> UC5 : <<include>>
+
+UC5 --> UC6 : <<include>>
+
+UC7 --> UC8 : <<include>>
+UC7 --> UC9 : <<include>>
+
+@enduml
+```
+
+---
+
+## Diagrama de Sequência - Previsão de Chegada
+
+```plantuml
+@startuml
+
+actor Usuario
+
+participant TelaPrograma
+participant ControleTela
+participant APIVirtual
+participant LinhaOnibus
+participant PrevisaoOnibus
+
+Usuario -> TelaPrograma : Seleciona linha
+
+TelaPrograma -> ControleTela : selecionarLinha()
+
+ControleTela -> APIVirtual : calcularPrevisao()
+
+APIVirtual -> LinhaOnibus : obter posição
+
+LinhaOnibus --> APIVirtual : posição atual
+
+APIVirtual -> APIVirtual : calcular distância
+
+APIVirtual -> APIVirtual : calcular tempo
+
+APIVirtual -> PrevisaoOnibus : criar previsão
+
+PrevisaoOnibus --> APIVirtual
+
+APIVirtual --> ControleTela
+
+ControleTela --> TelaPrograma : atualizar informações
+
+@enduml
+```
+
+---
+
+## Diagrama de Sequência - Pesquisa de Ponto
+
+```plantuml
+@startuml
+
+actor Usuario
+
+participant TelaPrograma
+participant ControleTela
+participant APIVirtual
+participant PontoOnibus
+participant LinhaOnibus
+
+Usuario -> TelaPrograma : Digita código do ponto
+
+TelaPrograma -> ControleTela : pesquisarPonto()
+
+ControleTela -> APIVirtual : buscarPontos(codigo)
+
+APIVirtual -> PontoOnibus : localizar ponto
+
+PontoOnibus --> APIVirtual : ponto encontrado
+
+APIVirtual -> LinhaOnibus : buscar linhas do ponto
+
+LinhaOnibus --> APIVirtual : lista de linhas
+
+APIVirtual --> ControleTela : linhas encontradas
+
+ControleTela --> TelaPrograma : atualizar lista
+
+@enduml
+```
+
+---
+
+## Diagrama dos Componentes do Programa
+
+```plantuml
+@startuml
+
+package "Interface" {
+
+    [TelaPrograma.fxml]
+    [ControleTela]
+}
+
+package "Execução" {
+
+    [ExecutarPrograma]
+}
+
+package "Serviços" {
+
+    [TrafegoTransporte]
+    [APIVirtual]
+}
+
+package "Domínio" {
+
+    [PontoOnibus]
+    [LinhaOnibus]
+    [PrevisaoOnibus]
+    [TamanhoRota]
+}
+
+package "Frota" {
+
+    [OnibusModelo]
+    [OnibusComum]
+    [OnibusEixo]
+}
+
+ExecutarPrograma --> [TelaPrograma.fxml]
+
+[TelaPrograma.fxml] --> [ControleTela]
+
+[ControleTela] --> [TrafegoTransporte]
+
+[TrafegoTransporte] --> [APIVirtual]
+
+[APIVirtual] --> [PontoOnibus]
+[APIVirtual] --> [LinhaOnibus]
+[APIVirtual] --> [PrevisaoOnibus]
+[APIVirtual] --> [TamanhoRota]
+
+[OnibusComum] -up-|> [OnibusModelo]
+[OnibusEixo] -up-|> [OnibusModelo]
 
 @enduml
 ```
