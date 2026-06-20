@@ -1,4 +1,4 @@
-# UML e Evidências/Testes de Execução - AppBus Acessível
+# UML e Evidências/Testes de Execução do Protótipo - AppBus Acessível
 
 ## Diagrama de Classes
 
@@ -319,114 +319,91 @@ ExecutarPrograma --> [TelaPrograma.fxml]
 
 ---
 
-# Evidências de Execução e Testes
+# Diagramas e Evidências de Execução/Testes
 
-## Capturas de Tela
+## Capturas de Tela - Testes
 
-### Figura 1
+### Classes do Programa Vizualidadas Via BlueJ
 
 ![image1.png](Imagens/image1.png)
 
-### Figura 2
+### Tela Inicial - Pesquisa de Ponto e Linha
 
 ![image2.png](Imagens/image2.png)
 
-### Figura 3
+### Teste - Entrada/Saída (Nome Padrão do Setor/Ponto)
 
 ![image3.png](Imagens/image3.png)
 
-### Figura 4
+### Teste - Entrada/Saída (Sigla do Setor/Ponto)
 
 ![image4.png](Imagens/image4.png)
 
-### Figura 5
+### Teste - Entrada/Saída (Nome Minúsculo e Junto do Setor/Ponto)
 
 ![image5.png](Imagens/image5.png)
 
-### Figura 6
+### Teste - Entrada/Saída (Erro: Sertor/Ponto Inválido)
 
 ![image6.png](Imagens/image6.png)
 
-### Figura 7
+### Teste - Entrada/Saída (Simplicação do Setor/Ponto) 
 
 ![image7.png](Imagens/image7.png)
 
-### Figura 8
+### Tela Inicial - Pesquisa de Rota
 
 ![image8.png](Imagens/image8.png)
 
-### Figura 9
+### Teste - Entrada/Saída (Nome Padrão dos Setores/Pontos)
 
 ![image9.png](Imagens/image9.png)
 
-### Figura 10
+### Teste - Entrada/Saída (Sigla dos Setores/Pontos)
 
 ![image10.png](Imagens/image10.png)
 
-### Figura 11
+### Teste - Entrada/Saída (Erro: Origem Inválida)
 
 ![image11.png](Imagens/image11.png)
 
-### Figura 12
+### Teste - Entrada/Saída (Erro: Destino Inválido)
 
 ![image12.png](Imagens/image12.png)
 
-### Figura 13
+### Tela Inicial Ampliada - Pesquisa de Ponto e Linha
 
 ![image13.png](Imagens/image13.png)
 
-### Figura 14
+### Tela Inicial Ampliada - Pesquisa de Rota
 
 ![image14.png](Imagens/image14.png)
 
-### Figura 15
+## Captura de Tela - Diagramas
 
-![Captura de tela 2026-06-10 184525.png](Imagens/Captura%20de%20tela%202026-06-10%20184525.png)
+### Diagrama - Classes do Programa
 
-### Figura 16
+![diagrama classes.png](Imagens/diagrama&classes.png)
 
-![Captura de tela 2026-06-10 184529.png](Imagens/Captura%20de%20tela%202026-06-10%20184529.png)
+### Diagrama - Pesquisa de Rota
 
-### Figura 17
+![pesquisa rota.png](Imagens/pesquisa&rota.png)
 
-![Captura de tela 2026-06-10 184531.png](Imagens/Captura%20de%20tela%202026-06-10%20184531.png)
+### Diagrama - Pesquisa de Ponto
 
-### Figura 18
+![pesquisa ponto.png](Imagens/pesquisa&ponto.png)
 
-![Captura de tela 2026-06-10 184614.png](Imagens/Captura%20de%20tela%202026-06-10%20184614.png)
+### Diagrama - Casos de Uso
 
-### Figura 19
+![diagrama uso.png](Imagens/diagrama&uso.png)
 
-![Captura de tela 2026-06-10 184625.png](Imagens/Captura%20de%20tela%202026-06-10%20184625.png)
+### Diagrama - Previsão de Chegada
 
-### Figura 20
+![previsão chegada.png](Imagens/previsão&chegada.png)
 
-![Captura de tela 2026-06-10 184648.png](Imagens/Captura%20de%20tela%202026-06-10%20184648.png)
+### Diagrama - Componentes do Programa
 
-### Figura 21
-
-![Captura de tela 2026-06-10 184729.png](Imagens/Captura%20de%20tela%202026-06-10%20184729.png)
-
-### Figura 22
-
-![Captura de tela 2026-06-10 184741.png](Imagens/Captura%20de%20tela%202026-06-10%20184741.png)
-
-### Figura 23
-
-![Captura de tela 2026-06-10 184755.png](Imagens/Captura%20de%20tela%202026-06-10%20184755.png)
-
-### Figura 24
-
-![Captura de tela 2026-06-10 184815.png](Imagens/Captura%20de%20tela%202026-06-10%20184815.png)
-
-### Figura 25
-
-![Captura de tela 2026-06-10 184836.png](Imagens/Captura%20de%20tela%202026-06-10%20184836.png)
-
-### Figura 26
-
-![Captura de tela 2026-06-10 190214.png](Imagens/Captura%20de%20tela%202026-06-10%20190214.png)
-
+![componentes.png](Imagens/componentes.png)
 
 ## Observações dos Testes
 
@@ -437,4 +414,5 @@ As imagens apresentadas demonstram:
 - Exibição de linhas associadas aos pontos;
 - Cálculo de rotas entre setores;
 - Simulação de previsão de chegada;
+- Simulação de erros possivéis do usuário;
 - Validação das funcionalidades principais do sistema.
