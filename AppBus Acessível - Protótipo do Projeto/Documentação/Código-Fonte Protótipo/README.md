@@ -68,7 +68,7 @@ Classe principal do JavaFX. Contém o método start, o método executarPrograma 
 Classe de teste sem JavaFX. Serve para validar a APIVirtual diretamente pelo terminal.
 
 ---
-### Aspecto de Perseverança de Dados (Lógica) - Juan Victor
+### Aspecto de Perseverança de Dados (Lógica & Desenvolvimento) - Juan Victor
 ---
 ### AppAcessivel
 
