@@ -5,10 +5,6 @@
 ---
 ### Aspecto Visual do Programa (Lógica & Implementação) - Miguel Camargo e Daniel Alberto
 ---
-### ExecutarPrograma.java
-
-Classe principal do JavaFX. Contém o método start, o método executarPrograma e o main.
-
 ### TelaPrograma.java
 
 Classe de visão. Carrega o arquivo TelaPrograma.fxml, cria a Scene em formato mobile e mostra a janela.
@@ -59,6 +55,13 @@ Classe abstrata base para os ônibus. Define identificador, tipo, cálculo de tr
 ### OnibusEixo.java
 
 Ônibus rápido/eixo. Simula menor tempo de chegada e maior velocidade média.
+
+---
+### Classes de execusão do Programa
+---
+### ExecutarPrograma.java
+
+Classe principal do JavaFX. Contém o método start, o método executarPrograma e o main.
 
 ### ExecutarTerminal.java
 
