@@ -1,4 +1,4 @@
-# AppBus Acessível
+# AppBus Acessível - Protótipo
 
 ## Perspectiva 
 
