@@ -1,4 +1,4 @@
-# Documentação do Projeto - AppBus Acessível
+# Documentação do Protótipo - AppBus Acessível
 
 ## 1. Introdução
 
