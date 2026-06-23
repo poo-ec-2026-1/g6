@@ -28,8 +28,6 @@ A minha parte não funciona isoladamente do restante do sistema. A interface dep
 
 Eu considero que a principal contribuição da minha parte foi trazer uma preocupação maior com a usabilidade da interface e com a acessibilidade dentro do sistema. Em vez de pensar a tela só como um lugar para “colocar as funções”, eu procurei organizar a experiência de uso de um jeito mais coerente com a proposta do aplicativo. Isso inclui a separação dos fluxos de navegação, a distribuição dos elementos na tela e a tentativa de tornar o uso mais claro para quem vai consultar ponto, linha ou rota. Dentro do contexto do projeto, essa parte ajuda a transformar a lógica do sistema em uma aplicação mais utilizável de fato, e não só em algo que funciona tecnicamente. No fim, a diferença entre uma tela apenas montada e uma interface realmente pensada para o usuário costuma aparecer justamente nesses detalhes.
 
-.
-
 **8\. Considerações finais**
 
 Em resumo, a parte que eu desenvolvi no AppBus Acessível ficou centrada na organização da interface principal e na preocupação com acessibilidade dentro do sistema. O objetivo foi estruturar uma tela que não fosse apenas funcional, mas também mais clara, previsível e confortável de usar, especialmente para quem pode ter mais dificuldade na navegação visual. Como eu também vivencio essa questão na prática, tentei trazer para o projeto uma visão menos genérica e mais próxima da experiência real de uso. No fim, minha intenção foi justamente essa: contribuir para que o sistema não fosse só tecnicamente correto, mas também mais humano na forma como apresenta suas funções.
