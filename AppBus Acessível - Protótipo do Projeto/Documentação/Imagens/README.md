@@ -1,1 +1,1 @@
-## Imagens de execuções e testes do programa protítipo AppBus Acessível 
+## Imagens de execuções, testes e diagramas do programa protítipo AppBus Acessível 
