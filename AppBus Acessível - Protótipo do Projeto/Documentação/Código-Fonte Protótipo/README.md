@@ -3,7 +3,7 @@
 ## Classes e arquivos principais do programa
 
 ---
-### Aspecto Visual do Programa (Lógica & Implementação) - Miguel Camargo e Daniel Alberto
+### Aspecto Visual do Programa (Lógica & Desenvolvimento) - Miguel Camargo e Daniel Alberto
 ---
 ### TelaPrograma.java
 
@@ -18,7 +18,7 @@ Arquivo visual do programa. Pode ser aberto no SceneBuilder para alterar campos,
 Classe de controle. Lida com cliques, pesquisas, seleção de pontos, seleção de linhas e cálculo de rotas.
 
 ---
-### Aspecto de Simulação do Programa (Lógica & Implementação) - Anderson Valerio
+### Aspecto de Simulação do Programa (Lógica & Desenvolvimento) - Anderson Valerio
 ---
 ### TrafegoTransporte.java
 
