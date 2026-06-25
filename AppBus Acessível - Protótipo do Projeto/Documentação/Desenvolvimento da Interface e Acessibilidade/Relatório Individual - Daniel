@@ -1,0 +1,68 @@
+# Relatório Individual de Produção
+
+**Disciplina:** Programação Orientada a Objetos  
+**Projeto:** AppBus Acessível
+
+---
+
+## 1. Atribuição de Cargo e Tarefas
+
+Fui designado como responsável pela análise e implementação dos recursos de acessibilidade do projeto. Uma função que exige tanto visão técnica quanto capacidade de adaptação, já que as atribuições foram se ajustando ao longo do processo conforme as necessidades da equipe foram mudando.
+
+Participei das discussões de planejamento em sala, propus soluções e desenvolvi o que foi solicitado em cada etapa.
+
+---
+
+## 2. Contribuição de Acordo com a Atribuição
+
+### O que foi cumprido
+
+Desenvolvi a classe `TelaPrograma` e o arquivo `TelaPrograma.fxml`, responsáveis por carregar e montar a interface principal do AppBus Acessível.
+
+A tela foi estruturada em dimensões de dispositivo móvel (390×760), com navegação entre abas, campos de busca, listas de pontos e linhas e painel de resultados, com paleta de cores coesa e layout não redimensionável para consistência visual.
+
+Desenvolvi também o módulo de acessibilidade do projeto, que foi integrado ao produto final e expandido pela equipe.
+
+### O que não deu para cumprir
+
+O módulo de busca e cálculo de distância foi desenvolvido com base na Fórmula de Haversine. A equipe optou por uma abordagem matricial diferente, mais adequada ao escopo do simulador nesta etapa.
+
+### Principais dificuldades
+
+As atribuições foram se ajustando ao longo do projeto, o que exigiu adaptação constante. Algumas entregas foram redirecionadas antes de serem incorporadas, o que faz parte do processo de desenvolvimento em equipe.
+
+---
+
+## 3. Contribuição Além do Atribuído
+
+O módulo de acessibilidade que desenvolvi foi integrado ao projeto final e evoluído pela equipe.
+
+### Artefatos presentes no produto
+
+#### SomAcessivel
+
+Feedback sonoro com arquivos de áudio reais (`sucesso.mp3` e `erro.mp3`) via `AudioClip` do JavaFX.
+
+#### AlertaAcessivel
+
+Diálogos integrados ao som e ao tema de alto contraste, com `AlertType.NONE` para eliminar sons do sistema operacional.
+
+#### acessibilidade.css
+
+Tema de alto contraste expandido com `dropshadow` no texto, suporte aos estados de botão da interface e cobertura nos diálogos do sistema.
+
+#### Usuario e LocalSalvo
+
+Modelo de autenticação e locais favoritos com coordenadas geográficas, presentes no projeto sem alterações estruturais.
+
+Participei ativamente das discussões em sala e contribuí para que o projeto fosse, de fato, o que o nome promete.
+
+---
+
+## 4. Considerações Gerais
+
+Desenvolver em grupo exige negociação constante entre o que é tecnicamente ideal e o que é coletivamente viável.
+
+As atribuições mudaram ao longo do processo, o que é natural em projetos colaborativos. O resultado final reflete o esforço conjunto da equipe.
+
+O módulo de acessibilidade está no projeto. Funcionando. Evoluído. É o suficiente.
